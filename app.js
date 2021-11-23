@@ -56,7 +56,7 @@ function createListItem(arr){
   }
   return msg;
 }
-
+// Output message to  document object
 document.body.innerHTML = `<h1>Thank you for playing the triva game! The number of correct question(s) you got was <strong>${correctAnswers}</strong>, so your ranking is <strong>${ranker()}</strong> </h1>
 <h1>Correct Questions:</h1>
 <ol>${createListItem(correct)}</ol>
