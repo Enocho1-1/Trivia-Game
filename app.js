@@ -19,10 +19,10 @@ let incorrect = [];
 let rank;
 
 
-// For loop iterates through the questions array 
-for(let i = 0; i < questions.length; i++){
-  let question = questions[i].inqury;
-  let answer = questions[i].answers;
+// For.. Of loop iterates through the questions array 
+for(let x of questions){
+  let question = x.inqury;
+  let answer = x.answers;
   let userInput = prompt(question);
 
   if( userInput.toLowerCase() === answer){
@@ -31,6 +31,7 @@ for(let i = 0; i < questions.length; i++){
   } else {
     incorrect.push(question);
   }
+
 }
 
 // Function that ranks user according to number of correct answers 
