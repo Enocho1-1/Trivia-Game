@@ -51,11 +51,12 @@ function ranker(){
 // Function that takes in correct/incorrect array and creates list items
 function createListItem(arr){
   let msg = '';
-  for(let i = 0; i < arr.length; i++){
-    msg += `<li>${arr[i]}</li>`;
-  }
+  for(let x of arr){
+    msg += `<li>${x}</li>`;
+  } 
   return msg;
 }
+
 // Output message to  document object
 document.body.innerHTML = `<h1>Thank you for playing the triva game! The number of correct question(s) you got was <strong>${correctAnswers}</strong>, so your ranking is <strong>${ranker()}</strong> </h1>
 <h1>Correct Questions:</h1>
